@@ -52,11 +52,14 @@
 
 <nav>
 	<ul>
-		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">home</a></li>
-		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">about</a></li>
+		<li><a rel=prefetch aria-current="{segment === undefined ? 'page' : undefined}" href=".">home</a></li>
+		<li><a rel=prefetch aria-current="{segment === 'concepts' ? 'page' : undefined}" href="concepts">concepts</a></li>
 
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">blog</a></li>
+		<li><a rel=prefetch aria-current="{segment === 'tips' ? 'page' : undefined}" href="tips">tips</a></li>
+		<li><a rel=prefetch aria-current="{segment === 'web-handoff' ? 'page' : undefined}" href="web-handoff">web handoff</a></li>
+		<li><a rel=prefetch aria-current="{segment === 'email-handoff' ? 'page' : undefined}" href="email-handoff">email handoff</a></li>
+		<li><a rel=prefetch aria-current="{segment === 'checklists' ? 'page' : undefined}" href="checklists">checklists</a></li>
 	</ul>
 </nav>
