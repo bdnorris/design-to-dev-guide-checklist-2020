@@ -125,8 +125,9 @@
 <p><a href="https://developers.google.com/web/fundamentals/design-and-ui/responsive/">Responsive Web Design Basics (Google)</a></p>
 <p><a href="http://trentwalton.com/2013/02/07/where-to-start/">Where to Start (Trent Walton)</a></p>
 <p><a href="https://mediaqueri.es/">Media Queries (RWD Examples)</a></p>
-<p><a href="http://www.mightymeta.co.uk/responsive-web-design-sketch-sheets/">RWD Sketch Sheets</a></p>
 <p><a href="http://zurb.com/playground/responsive-sketchsheets">More RWD Sketch Sheets</a></p>
+
+<div class="divider"></div>
 
 <h2 id="design-systems">Design Systems</h2>
 
@@ -165,15 +166,13 @@
 <p><a href="http://styleguides.io/">Website Style Guide Resources</a></p>
 <p><a href="https://clearleft.com/posts/designing-design-systems">ClearLeft: Designing Design Systems</a></p>
 
-<h4 id="here-s-the-coded-solution-for-smucker-s">Here&#39;s the coded solution for Smucker&#39;s</h4>
-
-<p><a href="https://determined-allen-3fca48.netlify.app/">Overview</a></p>
+<div class="divider"></div>
 
 <h2 id="atomic-design-and-components">Atomic Design and Components</h2>
 
 <p>Brad Frost is the designer/developer responsible for a lot of the growth, high-level thinking, and advocacy on the subject of component based design. He has a free book you should read. It&#39;s not that long!</p>
 
-<img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/60cdea13-b300-4b2b-a575-2a7c9a021943/atomic-design-product-700x413.jpg" alt="atomic design">
+<img src="images/atomic-design-process.png" alt="atomic design">
 
 <p><a href="https://atomicdesign.bradfrost.com/table-of-contents/">Atomic Design | Atomic Design by Brad Frost</a></p>
 
@@ -192,8 +191,10 @@
 
 <h3 id="how-to-">How to:</h3>
 
-<p><a href="https://letsxd.com/videos/components">https://letsxd.com/videos/components</a></p>
-<p><a href="https://medium.com/@mo.jahanii/adobe-xd-everything-about-resizable-components-f84105910428">https://medium.com/@mo.jahanii/adobe-xd-everything-about-resizable-components-f84105910428</a></p>
+<p><a href="https://letsxd.com/videos/components">Using Components in Adobe XD</a></p>
+<p><a href="https://medium.com/@mo.jahanii/adobe-xd-everything-about-resizable-components-f84105910428">Adobe XD: Everything about resizable components</a></p>
+
+<div class="divider"></div>
 
 <h2 id="web-patterns">Web Patterns</h2>
 
@@ -204,15 +205,19 @@
 <p><a href="http://ui-patterns.com/">UI Patterns</a></p>
 <p><a href="https://inclusive-components.design/">Inclusive Components</a></p>
 
+<div class="divider"></div>
+
 <h2 id="styletiles">Styletiles</h2>
 <p>One way to quickly iterate on the styles for a web project without having to complete full page designs too early.</p>
 
-<h3 id="-audience-"><strong>Audience</strong></h3>
+<h3 id="-audience-">Audience</h3>
 <p>Although style tiles are great for communicating amongst a design and development team, the ultimate audience for them is the client. They’re meant to quickly get feedback and show possible directions.</p>
 
-<h3 id="-level-of-detail-"><strong>Level of Detail</strong></h3>
+<h3 id="-level-of-detail-">Level of Detail</h3>
 <p>Style tiles are general. They exist to communicate mood and the general design direction.</p>
-<p>ref: <a href="http://styletil.es/">http://styletil.es</a></p>
+<p><a href="http://styletil.es/">Styletiles</a></p>
+
+<div class="divider"></div>
 
 <h2 id="wireframing-prototyping">Wireframing / Prototyping</h2>
 
@@ -306,6 +311,8 @@
 <p>And here&#39;s an example implementation.</p>
 <p><a href="https://tobiasahlin.com/moving-letters/">Moving Letters</a></p>
 
+<div class="divider"></div>
+
 <h2 id="typography">Typography</h2>
 
 <h3 id="responsive-typography">Responsive Typography</h3>
@@ -313,13 +320,6 @@
 
 <h4 id="watch-your-measure">Watch Your Measure</h4>
 <p>Measure (line-length) and word breaking are some of the more difficult things to control on the web and to optimize for responsive designs. Assuming a flexible container set to some percentage width of the viewport, how do you control line lengths when you don&#39;t control the canvas?</p>
-
-<h3 id="type-resources">Type Resources</h3>
-<p><a href="https://www.smashingmagazine.com/2014/09/balancing-line-length-font-size-responsive-web-design/">Size Matters: Balancing Line Length And Font Size In Responsive Web Design</a></p>
-<p><a href="http://trentwalton.com/2012/06/19/fluid-type/">Fluid Type</a></p>
-<p><a href="http://www.modularscale.com/">Scaling your hierarchy</a></p>
-<p><a href="https://www.gridlover.net/try">Grid Lover</a></p>
-<p><a href="https://archetypeapp.com/">Archetype App</a></p>
 
 <h3 id="webfonts">Webfonts</h3>
 
@@ -353,6 +353,15 @@
 <p><a href="https://www.recursive.design/">Recursive Sans &amp; Mono</a></p>
 <p>Very cool. And, we can use it right now, but, there&#39;s no IE support.</p>
 
+<h3 id="type-resources">Type Resources</h3>
+<p><a href="https://www.smashingmagazine.com/2014/09/balancing-line-length-font-size-responsive-web-design/">Size Matters: Balancing Line Length And Font Size In Responsive Web Design</a></p>
+<p><a href="http://trentwalton.com/2012/06/19/fluid-type/">Fluid Type</a></p>
+<p><a href="http://www.modularscale.com/">Scaling your hierarchy</a></p>
+<p><a href="https://www.gridlover.net/try">Grid Lover</a></p>
+<p><a href="https://archetypeapp.com/">Archetype App</a></p>
+
+<div class="divider"></div>
+
 <h2 id="layout">Layout</h2>
 
 <h3 id="the-layout-problem">The Layout problem</h3>
@@ -369,12 +378,14 @@
 
 <h3 id="css-grid">CSS Grid</h3>
 <p>As much as I&#39;d love to pontificate on the difficulties of web layouts through the years, we&#39;ll just skip to the fact that Grid is the first time we&#39;ve had a layout spec that works in two dimensions.</p>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bea67a2f-34da-447c-85da-10f437bf1e39/cssgrid_flexbox_fallbacks.png" alt="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bea67a2f-34da-447c-85da-10f437bf1e39/cssgrid_flexbox_fallbacks.png"></p>
+<p><img src="images/cssgrid_flexbox_fallbacks.png" alt="Grid Graphic"></p>
 
 <h4 id="the-biggest-thing-grid-adds-is-">The biggest thing grid adds is...</h4>
 
 <p>Horizontal grid lines. We make columns in CSS with hacks, then flexbox, but Grid is the first time we&#39;ve been able to do horizontal alignments. </p>
 <p>You should have a basic understanding of Grid, because if you make something look like a grid in your designs, we might try to use Grid to lay it out. Grid can do amazing things, but, there are little things it doesn&#39;t do.</p>
+
+<div class="divider"></div>
 
 <h2 id="forms">Forms</h2>
 <p>Forms often pose difficult design challenges because of push and pull of UX considerations, browser eccentricities and development time.</p>
@@ -386,34 +397,63 @@
 
 <h4 id="text">Text</h4>
 <p>Single line text entry. This also includes special inputs for email addresses, telephone numbers, search, password, and more. </p>
+<label for="text-ex">Text</label>
+<input type="text" id="text-ex">
+<label for="pw-ex">Password</label>
+<input type="password" id="pw-ex">
 
 <h4 id="text-areas">Text Areas</h4>
 <p>Muli-line text entry.</p>
+<label for="ta-ex">Text Area</label>
+<textarea id="ta-ex" />
 
 <h4 id="number">Number</h4>
 <p>This field lets you define a min, a max, and a step property allowing the user to bump them with UI or even the arrow keys on their keyboard. Most often seen in quantity boxes when shopping. </p>
+<label for="number-ex">Number</label>
+<input id="number-ex" type="number">
 
 <h4 id="range">Range</h4>
 <p>Similar to number, but gives you a slider as the UI. However, custom styling is difficult, so most of the time you see these, they&#39;ve been painstakingly re-created, rather than use the default styles.</p>
+<input type="range">
 
 <h4 id="date">Date</h4>
 <p>Browser support is still pretty bad, so most of the time you see a date-picker, it&#39;s a custom solution, but someday native date fields will be useable. </p>
+<input type="date">
 
 <h4 id="checkboxes">Checkboxes</h4>
 <p>Checkboxes represent true/false or on/off options in forms. They have no relationships other than to themselves. Styling involves hiding the real elements, and controlling them with fakes, aka &quot;psuedo elements&quot;.</p>
+  <input type="checkbox" id="cl" name="cl"
+         checked>
+  <label for="cl">Checkbox Label</label>
 
 <h4 id="radio-buttons">Radio Buttons</h4>
 <p>The little circle inputs are radio buttons and exist as a group. Turning on one means turning off another. Styling them also involves hiding the real elements and replacing them with psuedo elements.</p>
+	<input type="radio" id="huey" name="drone" value="huey" checked>
+	<label for="huey">Huey</label>
+	<input type="radio" id="dewey" name="drone" value="dewey">
+	<label for="dewey">Dewey</label>
+	<input type="radio" id="louie" name="drone" value="louie">
+	<label for="louie">Louie</label>
 
 <h4 id="selects-or-dropdowns-">Selects or &quot;Dropdowns&quot;</h4>
 <p>Selects can hide big lists of options. If there are less than 4 or so, consider using a radio group instead. Big long lists can be detrimental to the user experience. </p>
 <p>You may have seen type-ahead or searchable dropdowns. These are not native fields, but custom implementations. There is an input called a datalist that is similar, but not quite as robust as those custom solutions.</p>
 <p>Selects can also be tricky to style, but it&#39;s do-able. A good recommendation is to not attempt to style the contents of the dropdown, but just the dropdown itself.</p>
+<select name="pets" id="pet-select">
+    <option value="">--Please choose an option--</option>
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+    <option value="hamster">Hamster</option>
+    <option value="parrot">Parrot</option>
+    <option value="spider">Spider</option>
+    <option value="goldfish">Goldfish</option>
+</select>
 
 <h4 id="file">File</h4>
-<p>A button for uploading a file. The file upload has to be handled by separate programming, so these are just a UI that allows for picking a file reference from the users computer. Drag and drop implementations are not-native fields. </p>
+<p>A button for uploading a file. The file upload has to be handled by separate programming, so these are just a UI that allows for picking a file reference from the users computer. Drag and drop implementations are not-native fields.</p>
+<input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
 
-<h4 id="native-">Native?</h4>
+<h4 id="native">Native?</h4>
 <p>So what is meant by &quot;native&quot; fields? Those types described above all have native implementations that work in the browser. Native is preferred, especially for mobile usage, where a user on iOS gets an iOS experience, and an android user gets and android experience. However, styling options can be limited, meaning often, some inputs are manually pieced together to allow for full styling. Having an idea of the difference can help prioritize needs, as these custom styles are often very time consuming, and less accessible to users with disabilities. </p>
 
 <h3 id="input-labels-accessibility-and-placeholders">Input Labels, Accessibility, and Placeholders</h3>

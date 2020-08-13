@@ -29,3 +29,9 @@ h4 {font-size: 1.44em;}
 h5 {font-size: 1.2em;}
 
 small, .text_small {font-size: 0.833em;}
+
+blockquote {
+  margin-left: 0;
+  padding-left: 1em;
+  border-left: 4px solid $red;
+}

@@ -13,6 +13,8 @@
 	@import "./style/fonts.scss";
 	@import "./style/base.scss";
 	@import "./style/typography.scss";
+	@import "./style/callouts.scss";
+	@import "./style/dividers.scss";
 
 	main {
 		@include default-sizing(720px);
