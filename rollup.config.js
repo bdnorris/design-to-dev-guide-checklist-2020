@@ -12,14 +12,16 @@ import { mdsvex } from "mdsvex";
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
-const preprocess = sveltePreprocess({
+
+const preprocess = [
+	sveltePreprocess({
 	scss: {
 		includePaths: ['src'],
 	},
 	postcss: {
 		plugins: [require('autoprefixer')],
 	},
-});
+} ), mdsvex({})]
 
 const onwarn = (warning, onwarn) => (warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message)) || onwarn(warning);
 
@@ -36,7 +38,8 @@ export default {
 				dev,
 				hydratable: true,
 				emitCss: true,
-				preprocess,
+				extensions: [".svelte", ".svx"],
+				preprocess
 			}),
 			resolve({
 				browser: true,
@@ -81,6 +84,7 @@ export default {
 			svelte({
 				generate: 'ssr',
 				dev,
+				extensions: [".svelte", ".svx"],
 				preprocess
 			}),
 			resolve({
@@ -109,5 +113,5 @@ export default {
 
 		preserveEntrySignatures: false,
 		onwarn,
-	}
+	},
 };
