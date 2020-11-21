@@ -15,13 +15,22 @@ const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 
 const preprocess = [
 	sveltePreprocess({
-	scss: {
-		includePaths: ['src'],
-	},
-	postcss: {
-		plugins: [require('autoprefixer')],
-	},
-} ), mdsvex({})]
+		scss: {
+			includePaths: ['src'],
+		},
+		postcss: {
+			plugins: [require('autoprefixer')],
+		},
+	}),
+	mdsvex({
+		smartypants: {
+			quotes: true, // boolean = true;
+			ellipses: true, // boolean = true;
+			backticks: true, // boolean | 'all' = true;
+			dashes: true // boolean | 'oldschool' | 'inverted' = true;
+		}
+	})
+]
 
 const onwarn = (warning, onwarn) => (warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message)) || onwarn(warning);
 

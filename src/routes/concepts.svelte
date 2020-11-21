@@ -1,131 +1,14 @@
+<script>
+	import ResponsiveDesign from '../components/ResponsiveDesign.svx';
+</script>
+
 <svelte:head>
 	<title>Digital Design Concepts</title>
 </svelte:head>
 
 <h1>Digital Design Concepts</h1>
 
-<h2 id="responsive-design">Responsive Design</h2>
-
-<blockquote>
-<p><em>All materials, whether wood or pixels, have a grain, and that grain suggests the best way to work. Go with the grain and one will find sturdiness combined with tremendous flexibility — a natural and exciting give that grounds decisions and excites with possibilities. Work against the grain and the work becomes precarious, difficult and fragile. Instead of the elegant bending that software requires to adjust to different screens, uses, and situations, the work breaks because it cannot adapt.</em></p>
-</blockquote>
-
-<p>&mdash;<strong>Frank Chimero</strong> from the forward of <em>Learn to Code Now!</em> by the <strong>SuperHi Team</strong></p>
-
-<p>There are a multitude of devices and screen sizes in use today, and most of them are capable of accessing the web. Designing sites that can run anywhere is a significant challenge. Responsive Web Design (RWD) is an approach to this problem.</p>
-
-<p>Designing for the multitude of canvas dimensions is one of the most significant differences between print and digital design. We are now ten years into responsive design as an industry standard design approach, yet, the current state of design tools are not quite up to the task of assisting us in this approach (although, they are getting better).</p>
-
-<p>So until our design software forces us to think this way, it&#39;s up to you to make sure you fill that gap. Thinking of your design canvas as a flexible document rather than one with defined boundaries is the first step.</p>
-
-<h3 id="responsive-behavior">Responsive Behavior</h3>
-
-<p>There are several different ways your content can behave as the viewport size changes. Item&#39;s dimensions can flex, they can reflow (e.g. stack), and otherwise change at a certain width, etc. Generally, we use &quot;responsive&quot; to mean all of these things, but it’s worth being familiar with the differences. It’s easier to show than describe:</p>
-
-<ul>
-	<li><a href="http://g-mops.net/epica_saitama/epica_layout/index_adaptive.html">Liquid vs Adaptive</a></li>
-	<li><a href="https://css-tricks.com/the-difference-between-responsive-and-adaptive-design/">The Difference Between Responsive and Adaptive Design</a></li>
-</ul>
-
-<p>Most of the time, it’s obvious from the design files which approach certain elements of the page should take, but not always. That’s why it’s good to have a common language with your front-end developer to help describe responsive behaviors.</p>
-
-<h3 id="breakpoints">Breakpoints</h3>
-
-<p>Breakpoints are the pixel value dimensions of the browser’s viewport (browser window) that will trigger different visual layouts. They are typically based on the viewport width (since overflowing content can normally be reached by scrolling) but can be written for height as well. Major breakpoints should be chosen at the beginning of the design process.</p>
-
-<h4 id="full-set">Full set</h4>
-<ul>
-	<li>375 — small (btw, we still try to make things work down to 320)</li>
-	<li>667 — medium</li>
-	<li>1024 — large</li>
-	<li>1366 — xlarge</li>
-	<li>1920 — xxlarge (optional)</li>
-</ul>
-
-<h4 id="smaller-alternative-set">Smaller/Alternative set</h4>
-<ul>
-	<li>375 — small</li>
-	<li>768 — medium</li>
-	<li>1280 — large</li>
-</ul>
-
-<p class="callout">
-	📣 However, these are starting points. If they don&#39;t work with your design, change them!
-</p>
-
-<h4 id="breakpoints-are-free-sorta-">Breakpoints are free (sorta)!</h4>
-
-<p>Need an additional breakpoint, or 3, for a particularly tricky component? No problem. The only cost to adding breakpoints is time, and for most use cases, not a lot.</p>
-
-<p>Where it gets tricky is sometimes designs require adjustments every 100px or so. This gets tedious, but unfortunately, is sometimes hard to catch during the design phase.</p>
-
-<h3 id="large-screens-">Large Screens 🖥️</h3>
-
-<p>You may not need a full design for large screens, but you should have a plan for them. In our full set, 1366px would imply how the design looks above that size—If you&#39;re using the smaller set, 1280 would. </p>
-
-<p>Think about what happens to your content if the design gets larger. Perhaps you&#39;ve set a max-width on the content. </p>
-
-<p>Now what about the backgrounds, do they keep getting larger, do they stop growing at a certain point, are your backgrounds big enough? Is it clear what your intentions are?</p>
-
-<h3 id="what-s-a-pixel-">What&#39;s a Pixel?</h3>
-<p>What should ultimately be the simplest unit, is actually a bit complicated. The good news is, we mostly just have to worry about what are called &quot;Reference Pixels&quot; or &quot;CSS Pixels&quot;. I&#39;ll quote from a Smashing magazine article to explain these a bit</p>
-
-<p><a href="https://www.smashingmagazine.com/2012/08/towards-retina-web/">Towards a Retina Web</a></p>
-
-<h4 id="device-pixels-real-screens-">Device Pixels (real screens)</h4>
-
-<blockquote>
-	<p><em>A</em> <strong>device pixel</strong> <em>(or physical pixel) is the tiniest physical unit <em>in a display</em>. Each and every pixel sets its own color and brightness as instructed by the operating system, while the imperceptible distance between these tiny dots takes care of tricking the eye into perceiving the full image.</em></p>
-	<p><strong>Screen density</strong> <em>refers to the number of device pixels on a physical surface. It is often measured in pixels per inch (PPI). Apple has coined the marketing term “Retina” for its double-density displays, claiming that the human eye can no longer distinguish individual pixels on the screen from a “natural” viewing distance.</em></p>
-</blockquote>
-
-<h4 id="css-reference-device-independent-pixels-sizing-in-the-browser-">CSS/Reference/Device-Independent Pixels (sizing in the browser)</h4>
-
-<blockquote>
-	<p><em>A</em> <strong>CSS pixel</strong> <em>is an abstract unit used by browsers to precisely and consistently draw content on Web pages. Generically, CSS pixels are referred to as device-independent pixels (DIPs). On standard-density displays, 1 CSS pixel corresponds to 1 device pixel.</em></p>
-</blockquote>
-
-<h4 id="bitmap-pixels-image-">Bitmap Pixels (image)</h4>
-
-<blockquote>
-	<p><em>A</em> <strong>bitmap pixel</strong> <em>is the smallest unit of data in a raster image (PNG, JPG, GIF, etc). Each pixel contains information on how it is to be displayed, including its position in the image’s coordinate system and its color. Some image formats can store additional per-pixel data, such as opacity (which is the alpha channel).</em></p>
-	<p><em>Beside its raster resolution, an image on the Web has an abstract size, defined in CSS pixels. The browser squeezes or stretches the image based on its CSS height or width during the rendering process.</em></p>
-	<p><em>When a raster image is displayed at full size on a standard-density display, 1 bitmap pixel corresponds to 1 device pixel, resulting in a full-fidelity representation. Because a bitmap pixel can’t be further divided, it gets multiplied by four on Retina displays to preserve the same physical size of the image, losing detail along the way.</em></p>
-</blockquote>
-
-<h4 id="sorry-about-that">Sorry about that</h4>
-
-<p>...but the above will become very important when we start talking about retina graphics.</p>
-
-<h3 id="guides-and-grids">Guides and Grids</h3>
-
-<p>It&#39;s extremely helpful to establish columns and grids with guides inside your design file. It makes it much easier to measure white-space for one, but also, developers have a lot of tools at our disposal to interpret those into responsive code. It communicates your intentions much more clearly.</p>
-
-<h3 id="pixels-vs-percentages">Pixels vs Percentages</h3>
-
-<p>One thing that&#39;s really hard to communicate from design to development, as previously mentioned, is whether a particular thing should be adaptive or responsive, that is, should it be sized in pixels and then change at a breakpoint, or should it be designed at a percentage.</p>
-
-<p>Percentage based designs are typically more flexible and will look better for a wider variety of screens. But, they won&#39;t work for every concept. Developers will usually aim for percentage-based scaling, but if you definitely don&#39;t want that for some reason, make sure to document that.</p>
-
-<h3 id="time-for-mobile-first-design-">Time for mobile-first design 📱</h3>
-
-<p>Even our B2B clients are near 40% mobile usage</p>
-
-<p>What does this mean? You are encouraged to, if not design mobile-first, then produce your wireframes mobile-first.</p>
-
-<p>Either way, developers and clients should see mobile wireframes and desktop wireframes at the same time. So, even if you design on desktop first, you will have already worked through the exercise of how your content will work on mobile.</p>
-
-<p class="callout">🔥 If your content doesn&#39;t work on mobile, your content <em>doesn&#39;t work</em></p>
-
-<p><a href="https://www.uxpin.com/studio/blog/a-hands-on-guide-to-mobile-first-design/">A Hands-On Guide to Mobile-First Design</a></p>
-
-<h3 id="responsive-resources">Responsive Resources</h3>
-
-<p><a href="http://bradfrost.github.io/this-is-responsive/resources.html">Brad Frost&#39;s Responsive Resources</a></p>
-<p><a href="https://developers.google.com/web/fundamentals/design-and-ui/responsive/">Responsive Web Design Basics (Google)</a></p>
-<p><a href="http://trentwalton.com/2013/02/07/where-to-start/">Where to Start (Trent Walton)</a></p>
-<p><a href="https://mediaqueri.es/">Media Queries (RWD Examples)</a></p>
-<p><a href="http://zurb.com/playground/responsive-sketchsheets">More RWD Sketch Sheets</a></p>
+<ResponsiveDesign />
 
 <div class="divider"></div>
 

@@ -2,7 +2,7 @@
 	export let segment;
 </script>
 
-<style lang="scss" global>
+<style lang="scss">
 	@import "./style/variables.scss";
 	nav {
 		border-bottom: 1px solid rgba(255,62,0,0.1);
