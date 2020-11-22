@@ -1,10 +1,17 @@
 <script>
 	import ResponsiveDesign from '../components/ResponsiveDesign.svx';
+	import Menu from '../components/Menu.svelte';
+
+	const menu = [
+		['concepts', 'responsive-design', 'Responsive Design']
+	]
 </script>
 
 <svelte:head>
 	<title>Digital Design Concepts</title>
 </svelte:head>
+
+<Menu items={menu} />
 
 <h1>Digital Design Concepts</h1>
 
