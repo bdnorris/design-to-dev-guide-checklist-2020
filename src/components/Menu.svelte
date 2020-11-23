@@ -11,5 +11,11 @@
 </nav>
 
 <style lang="scss">
-
+	@import "./style/colors.scss";
+  nav {
+    padding: 2em 2em 2.3em 2em;
+    background-color: white;
+    border: 2px solid $red;
+    border-left: none;
+  }
 </style>

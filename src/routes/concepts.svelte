@@ -11,13 +11,14 @@
 	<title>Digital Design Concepts</title>
 </svelte:head>
 
-<Menu items={menu} />
-
-<h1>Digital Design Concepts</h1>
-
-<ResponsiveDesign />
-
-<div class="divider"></div>
+<article>
+	<h1>Digital Design Concepts</h1>
+	<ResponsiveDesign />
+	<div class="divider"></div>
+</article>
+<aside>
+	<Menu items={ menu } />
+</aside>
 
 <h2 id="design-systems">Design Systems</h2>
 

@@ -4,6 +4,12 @@
 	export let segment;
 </script>
 
+<Nav {segment}/>
+
+<main>
+	<slot></slot>
+</main>
+
 <style lang="scss" global>
 	@import "./style/variables.scss";
 	@import "./style/colors.scss";
@@ -16,13 +22,9 @@
 	@import "./style/dividers.scss";
 
 	main {
-		@include default-sizing(720px);
-		padding-top: 2em;
+		@include default-sizing(1120px);
+		padding-top: 3em;
+		display: grid;
+		grid-template-columns: 1.618fr 1fr;
 	}
 </style>
-
-<Nav {segment}/>
-
-<main>
-	<slot></slot>
-</main>

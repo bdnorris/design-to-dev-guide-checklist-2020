@@ -6,7 +6,11 @@
 	<title>Sapper project template</title>
 </svelte:head>
 
-<Intro />
+<article>
+	<Intro />
+</article>
+<aside>
+</aside>
 
 <style lang="scss">
 </style>
