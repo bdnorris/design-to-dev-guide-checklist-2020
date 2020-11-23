@@ -4,11 +4,15 @@
 
 <style lang="scss">
 	@import "./style/variables.scss";
+	@import "./style/colors.scss";
 	nav {
 		border-bottom: 1px solid rgba(255,62,0,0.1);
 		font-weight: 500;
 		padding: 0 1em;
 		// font-family: $sans;
+		a {
+			color: $text;
+		}
 	}
 
 	ul {

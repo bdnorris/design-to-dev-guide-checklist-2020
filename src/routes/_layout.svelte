@@ -27,4 +27,13 @@
 		display: grid;
 		grid-template-columns: 1.618fr 1fr;
 	}
+
+	article {
+
+	}
+
+	aside {
+		position: sticky;
+		top: 1em;
+	}
 </style>

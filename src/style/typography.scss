@@ -35,3 +35,10 @@ blockquote {
   padding-left: 1em;
   border-left: 4px solid $red;
 }
+
+a {
+  color: $turquoise;
+  &:visited {
+    color: gray;
+  }
+}
