@@ -1,7 +1,7 @@
 <script>
-	import ResponsiveDesign from '../components/ResponsiveDesign.svx';
 	import Menu from '../components/Menu.svelte';
-	import DesignSystems from '../components/DesignSystems.svx'
+	import ResponsiveDesign from '../markdown/ResponsiveDesign.svx';
+	import DesignSystems from '../markdown/DesignSystems.svx'
 
 	const menu = [
 		['concepts', 'responsive-design', 'Responsive Design'],
@@ -23,9 +23,6 @@
 <aside>
 	<Menu items={ menu } />
 </aside>
-
-
-
 
 <h2 id="wireframing-prototyping">Wireframing / Prototyping</h2>
 

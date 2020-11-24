@@ -2,7 +2,7 @@
   import Callout from '../components/Callout.svelte';
 </script>
 
-<a name="responsive-design"></a>
+<span id="responsive-design"></span>
 
 ## Responsive Design
 
