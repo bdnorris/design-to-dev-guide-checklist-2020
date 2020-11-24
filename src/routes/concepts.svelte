@@ -2,10 +2,12 @@
 	import Menu from '../components/Menu.svelte';
 	import ResponsiveDesign from '../markdown/ResponsiveDesign.svx';
 	import DesignSystems from '../markdown/DesignSystems.svx'
+	import WireframePrototyping from '../markdown/WireframePrototyping.svx'
 
 	const menu = [
 		['concepts', 'responsive-design', 'Responsive Design'],
 		['concepts', 'design-systems', 'Design Systems'],
+		['concepts', 'wireframing-prototyping', 'Wireframing/Prototyping'],
 	]
 </script>
 
@@ -19,104 +21,13 @@
 	<div class="divider"></div>
 	<DesignSystems />
 	<div class="divider"></div>
+	<WireframePrototyping />
+	<div class="divider"></div>
 </article>
 <aside>
 	<Menu items={ menu } />
 </aside>
 
-<h2 id="wireframing-prototyping">Wireframing / Prototyping</h2>
-
-<p>This is a big subject, so lets just look at some basic definitions. </p>
-
-<h3 id="wireframing">Wireframing</h3>
-<p>Wireframes are essentially a low-fidelity design. The point is to work out layouts and user interfaces by making the least design decisions possible. A good wireframe reveals what you know and what you don&#39;t know about your project. Most importantly it aligns all stakeholders before the more in-depth design work begins. </p>
-
-<h4 id="resiliency">Resiliency</h4>
-<p>There’s a tendency in the digital design process to design with ideal data, mock or otherwise. But a good template should be resilient and accommodate varying amounts and types of content.</p>
-<p>Will your design break if the client changes the copy at the last minute? Keep this in mind as you move from your wireframe to your fleshed out design.</p>
-
-<h3 id="prototyping">Prototyping</h3>
-<p>Prototyping can take a lot of different forms, but here&#39;s where we are making things that are actually interactive but have a similar incompleteness to a wireframe. The design probably isn&#39;t all the way thought out yet, and you&#39;re not even sure which pattern to use or abuse. </p>
-
-<h4 id="types">Types</h4>
-<ul>
-	<li>XD or similar design programs prototyping features.
-		<ul>
-			<li>Adding states and clickable navigation elements to your designs that can be previewed on the web.</li>
-			<li>This is probably going to be the most common way we prototype sites and apps.</li>
-		</ul>
-	</li>
-	<li>Low-overhead coded implementations.
-		<ul>
-			<li>Here&#39;s where a developer would start coding a project, but typically with a small data-set, and unpolished UI.</li>
-			<li>The goal is to get something interactive in front of stakeholders to work out the problem.</li>
-		</ul>
-	</li>
-	<li>Prototyping specific applications
-		<ul>
-			<li>There are a host of prototyping specific apps that can be used to work out solutions in low-to-high fidelity.</li>
-			<li>These typically are much more in-depth, and are mostly beneficial for very large, expensive projects.</li>
-			<li>Examples include Framer or InVision Studio</li>
-			<li><a href="https://www.framer.com/">https://www.framer.com/</a></li>
-			<li>These often have a lot more animation prototyping features than Adobe XD, at least at the moment.</li>
-		</ul>
-	</li>
-</ul>
-
-<h4 id="behavior-and-interactivity">Behavior and Interactivity</h4>
-
-<p>Prototyping most useful for complex user inputs.</p>
-<ul>
-	<li>For example: filters and search should show whether the increasing specificity is an additive process, or a subtractive, i.e. does the result set increase when adding search terms, or narrow?</li>
-	<li>Micro-interactions</li>
-	<li>Any other special behaviors that are based on user input</li>
-</ul>
-
-<h4 id="state">State</h4>
-
-<p>Prototype for all items that have a state, if you can’t design, <strong>document.</strong> </p>
-<ul>
-	<li>Hover states</li>
-	<li>Null/0/empty results from search or filtering and/or edge case results (1 item, 100 items)</li>
-	<li>Normal, error, and focus states on form inputs, including error messages</li>
-	<li>Any interface changes
-		<ul>
-			<li>Display toggles</li>
-			<li>Data updates
-				<ul>
-					<li>Wait times and loading states (what appears when there is a delay in updating the page?)</li>
-				</ul>
-			</li>
-		</ul>
-	</li>
-</ul>
-
-<h3 id="animation">Animation</h3>
-<ul>
-	<li>Animations need planning, so please <strong>document</strong> where you think animation will be useful and provide examples/mockups/sketches of the style of animation</li>
-	<li>If animation is elaborate, plan on adding a prototyping phase concurrent with visual design</li>
-</ul>
-
-<h4 id="complexity">Complexity</h4>
-<p>We can animate a lot. But the complexity varies and it&#39;s hard to break down in any kind of guidelines as to what&#39;s more or less complexity, time or cost.</p>
-<p>So let&#39;s discuss it early. </p>
-<p><em>Transforms</em> and <em>opacity</em> are the most performant animations. You know what opacity is, but what can we &quot;transform&quot;? Here&#39;s a start:</p>
-<p><a href="https://cssreference.io/property/transform/">transform - CSS Reference</a></p>
-
-<h4 id="animista">Animista</h4>
-<p>Animista is the best site to find some nice animation styles you can tweak and export code. All of these implementations have pretty good performance. </p>
-<p><a href="https://animista.net/">Animista</a></p>
-
-<h4 id="svg-line-dashes">SVG Line Dashes</h4>
-<p>We can do that line drawing in animation thing, but your SVGs need to be designed to accommodate it. </p>
-
-<h4 id="animation-libraries">Animation Libraries</h4>
-<p>There are some cool helper libraries out there for animation. These can speed up dev of more complex animations. However, they have a performance and download cost, so better to stick with one. Here&#39;s one...</p>
-<p><a href="https://animejs.com/">anime.js</a></p>
-<p>And here&#39;s an example implementation.</p>
-<p><a href="https://tobiasahlin.com/moving-letters/">Moving Letters</a></p>
-
-<div class="divider"></div>
 
 <h2 id="typography">Typography</h2>
 
