@@ -6,7 +6,7 @@
 	@import "./style/variables.scss";
 	@import "./style/colors.scss";
 	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
+		border-bottom: 1px solid $lgray;
 		font-weight: 500;
 		padding: 0 1em;
 		// font-family: $sans;
@@ -42,7 +42,7 @@
 		content: '';
 		width: calc(100% - 1em);
 		height: 2px;
-		background-color: rgb(255,62,0);
+		background-color: $clickable;
 		display: block;
 		bottom: -1px;
 	}
