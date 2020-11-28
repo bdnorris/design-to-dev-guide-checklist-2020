@@ -1,0 +1,101 @@
+<span id="typography"></span>
+
+## Typography
+
+### Responsive Typography
+
+When designing for various screens, there are multiple approaches to optimizing typography and a thousand variables.
+
+#### Watch Your Measure
+
+Measure (line-length) and word breaking are some of the more difficult things to control on the web and to optimize for responsive designs. Assuming a flexible container set to some percentage width of the viewport, how do you control line lengths when you don't control the canvas?
+
+### Webfonts
+
+#### **Document** **font usage and licensing**
+
+Webfonts need client specific licensing. We can't use desktop fonts or webfonts from another client. This should figured out during the design process, so you don't get too far using a font that's prohibitively expensive.
+
+Then, the developer either needs the files, or the specific information.
+
+*   If service other than Adobe Fonts or Google Fonts, please provide details or access
+*   **Document** weights and variations used (normal, medium, medium italic, etc.). If we include only the weights and variations that are actually used in the design, we can significantly shrink which fonts we have to download.
+
+We can use, with no special licensing…
+
+*   Google Fonts
+*   Typekit/Adobe Fonts
+
+Any other fonts need to have a webfont license secured. Again, we cannot use desktop fonts, and we will not convert from desktop to webfonts.
+
+### OpenType Features
+
+There are various open type features we can use in the browser. But it depends on the font, and it depends on the browser. I'll leave you to research from here, this stuff is still in a bit of flux.
+
+Typically, Google and Adobe only provide some OpenType features. We may have to find or even create different webfont versions to have all the desired features.
+
+[OpenType font features guide](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/OpenType_fonts_guide)
+
+[FontDrop!](https://fontdrop.info/)
+
+[The Complete CSS Demo for OpenType Features](https://sparanoid.com/lab/opentype-features/)
+
+### Variable fonts
+
+Variable fonts are a new Open Type specification. On the web it lets us pull in one webfont file for all of our weights and ranges of oblique-ness. It's more efficient, allows extremely precise control, and can even be animated.
+
+Adobe apps support manipulating these as well.
+
+[Variable Fonts](https://v-fonts.com/)
+
+Google fonts has been rolling out the ability to use the variable weight features on quite a few fonts in it's library:
+
+[Google Fonts](https://fonts.google.com/?vfonly=true)
+
+[Recursive Sans & Mono](https://www.recursive.design/)
+
+Very cool. And, we can use it right now, but, there's no IE support.
+
+### Type Resources
+
+[Size Matters: Balancing Line Length And Font Size In Responsive Web Design](https://www.smashingmagazine.com/2014/09/balancing-line-length-font-size-responsive-web-design/)
+
+[Fluid Type](http://trentwalton.com/2012/06/19/fluid-type/)
+
+[Scaling your hierarchy](http://www.modularscale.com/)
+
+[Grid Lover](https://www.gridlover.net/try)
+
+[Archetype App](https://archetypeapp.com/)
+
+## Layout
+
+### The Layout problem
+
+Responsive web design is hard, and for a while, the tools that made it easier (mostly the Bootstrap framework) made a lot of sites look like they came off of the same assembly line. This was mostly a reliance on common patterns (generally a good thing), but also, it was a response to just how hard it is to design responsively. Designers repeatedly fell back on familiar territory and patterns.
+
+However, now that a lot of the patterns are defined, we're in a better place to start breaking, expanding and generally being more creative with our layouts.
+
+[Modern Layouts: Getting Out of Our Ruts by Jen Simmons](https://vimeo.com/147950924)
+
+### Asset Layout and Alignments
+
+Similar assets should be sized and cropped similarly. If you find that assets placed in a layout have to be nudged to align with other assets, they likely need to be re-visited. Those nudges can be hard to translate to web stylesheets, and become increasingly complicated when compensating for different breakpoints.
+
+Instead, make sure grids, columns, and rows of assets can be aligned using basic alignment settings like top, left, right, bottom and center. If they have to be nudged outside of that, this will not translate to the web.
+
+### When in doubt, ask
+
+The more complex a layout or a design, the less obvious the actual assets needed to give to the developer. Different front-end devs may very well try to achieve the same design in different ways, requiring different assets. When it's not obvious how an asset should be sized and prepped, some discussion may be required.
+
+### CSS Grid
+
+As much as I'd love to pontificate on the difficulties of web layouts through the years, we'll just skip to the fact that Grid is the first time we've had a layout spec that works in two dimensions.
+
+![Grid Graphic](images/cssgrid_flexbox_fallbacks.png)
+
+#### The biggest thing grid adds is...
+
+Horizontal grid lines. We make columns in CSS with hacks, then flexbox, but Grid is the first time we've been able to do horizontal alignments.
+
+You should have a basic understanding of Grid, because if you make something look like a grid in your designs, we might try to use Grid to lay it out. Grid can do amazing things, but, there are little things it doesn't do.
