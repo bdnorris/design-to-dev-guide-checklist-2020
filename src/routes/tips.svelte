@@ -1,7 +1,21 @@
+<script>
+	import Menu from '../components/Menu.svelte';
+	import DosAndDonts from '../markdown/DosAndDonts.svx';
+
+	const menu = [
+		['concepts', 'dos-and-donts', 'Dos and Don’ts'],
+	]
+</script>
+
 <svelte:head>
 	<title>About</title>
 </svelte:head>
 
-<h1>About this site</h1>
+<article>
+	<h1>Digital Design Tips</h1>
+	<DosAndDonts />
+</article>
+<aside>
+	<Menu items={ menu } />
+</aside>
 
-<p>This is the 'about' page. There's not much here.</p>
