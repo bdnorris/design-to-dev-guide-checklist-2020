@@ -1,0 +1,53 @@
+<span id="images"></span>
+
+## Advanced Strategies for Images
+
+There are some new strategies available in the browser that might be helpful for you to know about.
+
+### Object Fit
+
+Object-fit is a way to make content items fill their given space in both directions, similar to a background image. 
+
+[Jen Simmons Layout Lab](https://labs.jensimmons.com/2019/01-002.html)
+
+This can be done with images and videos. 
+
+### Srcset
+
+This is a new coding strategy that allows us to only deliver retina images to screens that actually are retina. That way, we don't send images that are larger than they need to be. 
+
+This does mean we either need both the retina and the non-retina images to be handed off, or, use an image delivery service. 
+
+## Navigation 🧭
+
+Navigation can be a beast. Here's some suggestions for tackling complex navigation.
+
+1. Admit it's really hard
+
+2. Make it simpler if you can
+
+   1. Carefully consider your information architecture and, the amount of content you have.
+   2. Put user needs above the client's needs.
+
+3. Use "mega-menus", but, do your research
+
+   1. Admit that these can be hard to develop, maintain, and make accessible. 💵
+   2. Click/Hover/Landing Pages → "The preferred and the most straightforward one involves including a link to the category landing page inside the associated menu."
+
+   [https://www.nngroup.com/articles/split-buttons-navigation/](https://www.nngroup.com/articles/split-buttons-navigation/)
+
+   [Mega Menus Work Well for Site Navigation](https://www.nngroup.com/articles/mega-menus-work-well/)
+
+4. You ~~may~~ probably need a *completely different pattern for mobile*. 💵
+
+5. Use Breadcrumbs on your pages!
+
+[Breadcrumb Navigation Increasingly Useful](https://www.nngroup.com/articles/breadcrumb-navigation-useful/)
+
+### More N/N
+
+[4 Dangerous Navigation Approaches that Can Increase Cognitive Strain](https://www.nngroup.com/articles/navigation-cognitive-strain/)
+
+[Beyond the Hamburger: What Makes Navigation Discoverable on Desktops](https://www.nngroup.com/articles/find-navigation-desktop-not-hamburger/)
+
+ Why Nielsen/Norman? They do actual research and back up their conclusions with data. This is different than pretty much everything else you read online.
