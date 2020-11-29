@@ -26,6 +26,7 @@
 		padding-top: 3em;
 		display: grid;
 		grid-template-columns: 1.618fr 1fr;
+		position: relative;
 	}
 
 	article {
@@ -33,7 +34,9 @@
 	}
 
 	aside {
-		position: sticky;
-		top: 1em;
+		// position: sticky;
+		position: fixed;
+		top: 2em;
+		right: 0;
 	}
 </style>
