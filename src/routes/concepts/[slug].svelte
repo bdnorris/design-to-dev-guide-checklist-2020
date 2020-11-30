@@ -20,8 +20,9 @@
 		// `this.fetch` is a wrapper around `fetch` that allows
 		// you to make credentialled requests on both
     // server and client
+    const matchingComponent = components.find(c => c.slug === slug);
 
-    return { slug }
+    return { slug, matchingComponent }
 
   }
 </script>
@@ -29,9 +30,9 @@
 <script>
   // export let article;
   export let slug;
-  // export let matchingComponent;
+  export let matchingComponent;
+  // export let components;
 
-  let matchingComponent = components.find(c => c.slug === slug);
 
   // import B from "./icons/B.html";
   // import C from "./icons/C.html";
@@ -41,13 +42,13 @@
 
   // export let cmp = components[0].component
 
-  function update() {
-    // determine whether we should auto-scroll
-    // once the DOM is updated...
-    console.log('update')
-    matchingComponent = components.find(c => c.slug === slug);
-    cmp = matchingComponent.component
-	}
+  // function update() {
+  //   // determine whether we should auto-scroll
+  //   // once the DOM is updated...
+  //   console.log('update')
+  //   matchingComponent = components.find(c => c.slug === slug);
+  //   cmp = matchingComponent.component
+	// }
   
   // console.log(matchingComponent)
 
@@ -68,7 +69,7 @@
   <ul>
     {#each components as component}
       <li>
-        <a rel=prefetch href="concepts/{ component.slug }" on:click={update}>
+        <a rel=prefetch href="concepts/{ component.slug }">
           { component.name }
         </a>
       </li>
