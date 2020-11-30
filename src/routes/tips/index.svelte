@@ -3,12 +3,12 @@
 </script>
 
 <svelte:head>
-	<title>Digital Design Concepts</title>
+	<title>Tips</title>
 </svelte:head>
 
 <article>
-	<h1>Digital Design Concepts</h1>
-	<Menu set="concepts" />
+	<h1>Digital Design Tips</h1>
+	<Menu set="tips" />
 </article>
-<aside>
-</aside>
+<aside></aside>
+
