@@ -68,7 +68,7 @@
   <ul>
     {#each components as component}
       <li>
-        <a href="concepts/{ component.slug }" on:click={update}>
+        <a rel=prefetch href="concepts/{ component.slug }" on:click={update}>
           { component.name }
         </a>
       </li>
