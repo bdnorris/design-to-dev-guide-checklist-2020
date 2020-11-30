@@ -1,80 +1,45 @@
-<!-- src/routes/blog/[slug].svelte -->
 <script context="module">
 
-  import { beforeUpdate, afterUpdate } from 'svelte';
-  import ResponsiveDesign from "./markdown/responsive-design.svx"
-  import DesignSystems from "./markdown/design-systems.svx"
-
-  const components = [
-    { slug: 'responsive-design', component: ResponsiveDesign, name: 'Responsive Design'},
-    { slug: 'design-systems', component: DesignSystems, name: 'Design Systems'} 
-  ]
-	// the (optional) preload function takes a
-	// `{ path, params, query }` object and turns it into
-	// the data we need to render the page
-	export async function preload(page, session) {
+  export async function preload(page, session) {
 		// the `slug` parameter is available because this file
 		// is called [slug].svelte
-		const { slug } = page.params;
+		const { slug } = page.params
 
-		// `this.fetch` is a wrapper around `fetch` that allows
-		// you to make credentialled requests on both
-    // server and client
-    const matchingComponent = components.find(c => c.slug === slug);
-
-    return { slug, matchingComponent }
-
+    return { slug }
   }
+
 </script>
-
 <script>
-  // export let article;
-  export let slug;
-  export let matchingComponent;
-  // export let components;
+  export let slug
 
+  import { onMount } from 'svelte'
 
-  // import B from "./icons/B.html";
-  // import C from "./icons/C.html";
-  // import D from "./icons/D.html";
+	let Markdown
 
-
-
-  // export let cmp = components[0].component
-
-  // function update() {
-  //   // determine whether we should auto-scroll
-  //   // once the DOM is updated...
-  //   console.log('update')
-  //   matchingComponent = components.find(c => c.slug === slug);
-  //   cmp = matchingComponent.component
-	// }
-  
-  // console.log(matchingComponent)
-
-  export let cmp = matchingComponent.component
-
+	onMount(async () => {
+		const module = await import('./concepts/markdown/' + slug + ".svx")
+		Markdown = module.default
+	})
 </script>
 
 <svelte:head>
-	<title>{ slug }</title>
+	<title>Concepts</title>
 </svelte:head>
 
 <article>
-  <svelte:component this={cmp}>
-    <!-- contents go here -->
-  </svelte:component>
+  <svelte:component this={Markdown}></svelte:component>
 </article>
 <aside>
   <ul>
-    {#each components as component}
-      <li>
-        <a rel=prefetch href="concepts/{ component.slug }">
-          { component.name }
-        </a>
-      </li>
-    {/each}
+    <li>
+      <a rel=prefetch href="concepts/responsive-design">
+        Responsive Design
+      </a>
+    </li>
+    <li>
+      <a rel=prefetch href="concepts/design-systems">
+        Design Systems
+      </a>
+    </li>
   </ul>
 </aside>
-
-
