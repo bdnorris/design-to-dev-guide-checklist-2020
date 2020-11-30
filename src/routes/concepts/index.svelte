@@ -1,10 +1,10 @@
 <script>
-	import Menu from '../components/Menu.svelte';
-	import ResponsiveDesign from '../markdown/ResponsiveDesign.svx';
-	import DesignSystems from '../markdown/DesignSystems.svx'
-	import WireframePrototyping from '../markdown/WireframePrototyping.svx'
-	import Typography from '../markdown/Typography.svx'
-	import Forms from '../markdown/Forms.svx'
+	import Menu from '../../components/Menu.svelte';
+	// import ResponsiveDesign from '../markdown/ResponsiveDesign.svx';
+	// import DesignSystems from '../markdown/DesignSystems.svx'
+	// import WireframePrototyping from '../markdown/WireframePrototyping.svx'
+	// import Typography from '../markdown/Typography.svx'
+	// import Forms from '../markdown/Forms.svx'
 
 	const menu = [
 		['concepts', 'responsive-design', 'Responsive Design'],
@@ -21,15 +21,15 @@
 
 <article>
 	<h1>Digital Design Concepts</h1>
-	<ResponsiveDesign />
+	<!-- <ResponsiveDesign />
 	<div class="divider"></div>
 	<DesignSystems />
 	<div class="divider"></div>
 	<WireframePrototyping />
 	<Typography />
 	<div class="divider"></div>
-	<Forms />
+	<Forms /> -->
+	<Menu items={ menu } />
 </article>
 <aside>
-	<Menu items={ menu } />
 </aside>

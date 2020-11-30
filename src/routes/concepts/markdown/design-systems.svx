@@ -1,5 +1,5 @@
 <script>
-  import Callout from '../components/Callout.svelte';
+  import Callout from '../../../components/Callout.svelte';
 </script>
 
 <span id="design-systems"></span>

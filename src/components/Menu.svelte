@@ -6,7 +6,7 @@
   <ul>
     {#each items as item}
       <li>
-        <a href='{ item[0] }#{ item[1] }'>
+        <a href='{ item[0] }/{ item[1] }'>
           { item[2] }
         </a>
       </li>
