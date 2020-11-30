@@ -1,7 +1,7 @@
 {
-  "name": "TODO",
+  "name": "design-to-dev-checklist-2020",
   "description": "TODO",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "scripts": {
     "dev": "sapper dev --ext '.svelte .svx'",
     "build": "sapper build --legacy --ext '.svelte .svx'",
