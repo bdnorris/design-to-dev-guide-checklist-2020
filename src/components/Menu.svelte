@@ -1,5 +1,6 @@
 <script>
   export let set
+  export let style
 
   let items
 
@@ -22,7 +23,7 @@
   }
 </script>
 
-<nav>
+<nav class="{style}">
   <ul>
     {#each items as item}
       <li>
@@ -34,12 +35,30 @@
   </ul>
 </nav>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	@import "./style/colors.scss";
+	@import "./style/variables.scss";
+  @import "./style/vendor/index.scss";
   nav {
-    padding: 2em 2em 2.333em 3em;
+    padding: 0 0 2.333em 0;
     // background-color: white;
     // border: 2px solid $red;
     // border-left: none;
+    font-size: 1.333em;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    &.index {
+      font-size: 1.666em;
+    }
+    @include breakpoint(large) {
+      padding: 2em 2em 2.333em 3em;
+      &.index {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
   }
 </style>

@@ -23,10 +23,15 @@
 
 	main {
 		@include default-sizing(1120px);
-		padding-top: 3em;
-		display: grid;
-		grid-template-columns: 1.618fr 1fr;
+		padding-top: 2em;
 		position: relative;
+		display: flex;
+		flex-direction: column-reverse;
+		@include breakpoint(large) {
+			display: grid;
+			grid-template-columns: 1.618fr 1fr;
+			padding-top: 3em;
+		}
 	}
 
 	article {
@@ -34,9 +39,11 @@
 	}
 
 	aside {
-		// position: sticky;
-		position: fixed;
-		top: 2em;
-		right: 0;
+		@include breakpoint(large) {
+			position: sticky;
+			// position: fixed;
+			top: 1em;
+			max-height: 80vh;
+		}
 	}
 </style>

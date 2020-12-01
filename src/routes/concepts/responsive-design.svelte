@@ -1,5 +1,6 @@
 <script>
   import Menu from '../../components/Menu.svelte';
+  import PrevNext from '../../components/PrevNext.svelte'
   import Markdown from './markdown/responsive-design.svx'
 </script>
 
@@ -9,6 +10,9 @@
 
 <article>
   <svelte:component this={Markdown}></svelte:component>
+  <footer>
+    <PrevNext />
+  </footer>
 </article>
 <aside>
   <Menu set="concepts" />

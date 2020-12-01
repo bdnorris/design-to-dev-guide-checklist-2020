@@ -8,7 +8,7 @@
 
 <article>
 	<h1>Digital Design Concepts</h1>
-	<Menu set="concepts" />
+	<Menu set="concepts" style="index" />
 </article>
 <aside>
 </aside>
