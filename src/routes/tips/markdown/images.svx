@@ -1,10 +1,8 @@
-<span id="images"></span>
-
-## Advanced Strategies for Images
+# Advanced Strategies for Images
 
 There are some new strategies available in the browser that might be helpful for you to know about.
 
-### Object Fit
+## Object Fit
 
 Object-fit is a way to make content items fill their given space in both directions, similar to a background image. 
 
@@ -12,13 +10,13 @@ Object-fit is a way to make content items fill their given space in both directi
 
 This can be done with images and videos. 
 
-### Srcset
+## Srcset
 
 This is a new coding strategy that allows us to only deliver retina images to screens that actually are retina. That way, we don't send images that are larger than they need to be. 
 
 This does mean we either need both the retina and the non-retina images to be handed off, or, use an image delivery service. 
 
-## Navigation 🧭
+# Navigation 🧭
 
 Navigation can be a beast. Here's some suggestions for tackling complex navigation.
 
@@ -44,7 +42,7 @@ Navigation can be a beast. Here's some suggestions for tackling complex navigati
 
 [Breadcrumb Navigation Increasingly Useful](https://www.nngroup.com/articles/breadcrumb-navigation-useful/)
 
-### More N/N
+## More N/N
 
 [4 Dangerous Navigation Approaches that Can Increase Cognitive Strain](https://www.nngroup.com/articles/navigation-cognitive-strain/)
 

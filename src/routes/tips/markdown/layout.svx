@@ -1,12 +1,10 @@
-<span id="layout"></span>
+# Layout Tips
 
-## Layout Tips
-
-### Real world patterns for using grid to achieve different layouts.
+## Real world patterns for using grid to achieve different layouts.
 
 [Grid by Example](https://gridbyexample.com/)
 
-### The Cool Grid Stuff
+## The Cool Grid Stuff
 
 Not every grid cell needs content, they can be used for whitespace!
 
@@ -31,7 +29,7 @@ They're very responsive, in new ways
 
 [CSS grid showcase](https://sii.im/playground/css-grid/#/)
 
-### Things Grid doesn't do
+## Things Grid doesn't do
 
 - Things must fall on the grid, regardless of their size or how you want to align them. Items can't arbitrarily cross grid lines unless specified.
 - Grid probably isn't the best solution if you just need to put some things on the same line, or you don't know how wide your items will be.

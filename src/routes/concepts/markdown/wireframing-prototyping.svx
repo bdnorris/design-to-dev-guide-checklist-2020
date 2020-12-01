@@ -2,27 +2,25 @@
   import Callout from '../../../components/Callout.svelte';
 </script>
 
-<span id="wireframing-prototyping"></span>
-
-## Wireframing / Prototyping
+# Wireframing / Prototyping
 
 This is a big subject, so lets just look at some basic definitions.
 
-### Wireframing
+## Wireframing
 
 Wireframes are essentially a low-fidelity design. The point is to work out layouts and user interfaces by making the least design decisions possible. A good wireframe reveals what you know and what you don't know about your project. Most importantly it aligns all stakeholders before the more in-depth design work begins.
 
-#### Resiliency
+### Resiliency
 
 There’s a tendency in the digital design process to design with ideal data, mock or otherwise. But a good template should be resilient and accommodate varying amounts and types of content.
 
 Will your design break if the client changes the copy at the last minute? Keep this in mind as you move from your wireframe to your fleshed out design.
 
-### Prototyping
+## Prototyping
 
 Prototyping can take a lot of different forms, but here's where we are making things that are actually interactive but have a similar incompleteness to a wireframe. The design probably isn't all the way thought out yet, and you're not even sure which pattern to use or abuse.
 
-#### Types
+### Types
 
 *   XD or similar design programs prototyping features.
     *   Adding states and clickable navigation elements to your designs that can be previewed on the web.
@@ -37,7 +35,7 @@ Prototyping can take a lot of different forms, but here's where we are making th
     *   [https://www.framer.com/](https://www.framer.com/)
     *   These often have a lot more animation prototyping features than Adobe XD, at least at the moment.
 
-#### Behavior and Interactivity
+### Behavior and Interactivity
 
 Prototyping most useful for complex user inputs.
 
@@ -45,7 +43,7 @@ Prototyping most useful for complex user inputs.
 *   Micro-interactions
 *   Any other special behaviors that are based on user input
 
-#### State
+### State
 
 Prototype for all items that have a state, if you can’t design, **document.**
 
@@ -57,12 +55,12 @@ Prototype for all items that have a state, if you can’t design, **document.**
     *   Data updates
         *   Wait times and loading states (what appears when there is a delay in updating the page?)
 
-### Animation
+## Animation
 
 *   Animations need planning, so please **document** where you think animation will be useful and provide examples/mockups/sketches of the style of animation
 *   If animation is elaborate, plan on adding a prototyping phase concurrent with visual design
 
-#### Complexity
+### Complexity
 
 We can animate a lot. But the complexity varies and it's hard to break down in any kind of guidelines as to what's more or less complexity, time or cost.
 
@@ -72,17 +70,17 @@ _Transforms_ and _opacity_ are the most performant animations. You know what opa
 
 [transform - CSS Reference](https://cssreference.io/property/transform/)
 
-#### Animista
+### Animista
 
 Animista is the best site to find some nice animation styles you can tweak and export code. All of these implementations have pretty good performance.
 
 [Animista](https://animista.net/)
 
-#### SVG Line Dashes
+### SVG Line Dashes
 
 We can do that line drawing in animation thing, but your SVGs need to be designed to accommodate it.
 
-#### Animation Libraries
+### Animation Libraries
 
 There are some cool helper libraries out there for animation. These can speed up dev of more complex animations. However, they have a performance and download cost, so better to stick with one. Here's one...
 
