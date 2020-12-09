@@ -39,6 +39,6 @@ blockquote {
 a {
   color: $clickable;
   &:visited {
-    color: $gray;
+    color: $clickable-visited;
   }
 }

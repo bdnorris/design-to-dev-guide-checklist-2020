@@ -56,6 +56,8 @@ Think about what happens to your content if the design gets larger. Perhaps you&
 
 Now what about the backgrounds, do they keep getting larger, do they stop growing at a certain point, are your backgrounds big enough? Is it clear what your intentions are?
 
+You can find [more information about how to deal with backgrounds in the Tips section](/tips/max-widths).
+
 ## What&#39;s a Pixel?
 
 What should ultimately be the simplest unit, is actually a bit complicated. The good news is, we mostly just have to worry about what are called &quot;Reference Pixels&quot; or &quot;CSS Pixels&quot;. I&#39;ll quote from a Smashing magazine article to explain these a bit.
@@ -86,7 +88,51 @@ What should ultimately be the simplest unit, is actually a bit complicated. The 
 
 ## Guides and Grids
 
-It&#39;s extremely helpful to establish columns and grids with guides inside your design file. It makes it much easier to measure white-space for one, but also, developers have a lot of tools at our disposal to interpret those into responsive code. It communicates your intentions much more clearly.
+It's extremely helpful to establish columns, grids, and guides inside your design files. It makes it much easier to measure white-space for one, but also, developers have a lot of tools at their disposal to interpret those into responsive code. It communicates your intentions much more clearly.
+
+### Column Grids
+
+![example of a column-based layout](/images/guides@2x.png)
+
+Columnar grids like this, with even columns and gutters, are a nice way to establish a uniform grid system across an entire website. 
+
+In Adobe XD, you can activate and customize a column system by selecting the artboard and turning on the "Layout Grid." 
+
+They may not work for every design, but the concept can be adapted for non-symmetrical layouts using manually placed guides as well. 
+
+### Two-dimensional Grids
+
+With the new CSS "Grid" feature, we can create two-dimensional grids as well. By "two-dimensional" we mean both columns and rows. These new features are pretty powerful, letting us specify dimensions of columns and rows by fractions, percentages, pixels, or let them adapt to their content. 
+
+You should have a basic understanding of Grid because if you make something look like a grid in your designs, we might try to use Grid to lay it out. Grid can do amazing things, but, there are little things it doesn't do.
+
+#### Cool Grid Stuff
+
+Jen Simmons does a lot of thinking and advocating for all things web-layout. She's a great resource for learning what Grid can do.
+
+Not every grid cell needs content, they can be used for whitespace!
+https://www.youtube.com/watch?v=YfIjFeBLhyA
+
+You can create overlaps!
+https://www.youtube.com/watch?v=EashgVqboWo
+
+Size things with minimums and maximums, but let them flex in-between.
+https://www.youtube.com/watch?v=lZ2JX_6SGNI
+
+Here's a couple of more general talks from Jen about web layout. 
+
+[Modern Layouts: Getting Out of Our Ruts by Jen Simmons](https://aneventapart.com/news/post/modern-layouts-getting-out-of-our-ruts-by-jen-simmons-an-event-apart-video)
+
+[Revolutionize Your Page: Real Art Direction on the Web by Jen Simmons](https://aneventapart.com/news/post/real-art-direction-on-the-web-by-jen-simmons-an-event-apart)
+
+Here's one last resource with some [real world examples of layouts based on Grid](https://sii.im/playground/css-grid/). 
+
+#### Things Grid doesn't do
+
+- Things must fall on the grid, regardless of their size or how you want to align them. Items can't arbitrarily cross grid lines unless specified.
+- Grid probably isn't the best solution if you just need to put some things on the same line, or you don't know how wide your items will be.
+
+<Callout copy="There is no IE support for Grid." emoji="alarm" />
 
 ## Pixels vs Percentages
 

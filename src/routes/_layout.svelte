@@ -11,11 +11,11 @@
 </main>
 
 <style lang="scss" global>
+	@import "./style/normalize.scss";
 	@import "./style/variables.scss";
 	@import "./style/colors.scss";
 	@import "./style/vendor/index.scss";
 	@import "./style/mixins-functions.scss";
-	@import "./style/normalize.scss";
 	@import "./style/fonts.scss";
 	@import "./style/base.scss";
 	@import "./style/typography.scss";
