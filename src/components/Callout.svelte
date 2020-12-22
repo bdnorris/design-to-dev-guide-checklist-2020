@@ -11,6 +11,9 @@
 		{#if emoji === 'fire'}
 			🔥
 		{/if}
+		{#if emoji === 'alarm'}
+			🚨
+		{/if}
 	</div>
 	<p>
   	{@html copy }

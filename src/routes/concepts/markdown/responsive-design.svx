@@ -102,6 +102,8 @@ They may not work for every design, but the concept can be adapted for non-symme
 
 ### Two-dimensional Grids
 
+![example of a two-demensional grid layout](/images/grid@2x.png)
+
 With the new CSS "Grid" feature, we can create two-dimensional grids as well. By "two-dimensional" we mean both columns and rows. These new features are pretty powerful, letting us specify dimensions of columns and rows by fractions, percentages, pixels, or let them adapt to their content. 
 
 You should have a basic understanding of Grid because if you make something look like a grid in your designs, we might try to use Grid to lay it out. Grid can do amazing things, but, there are little things it doesn't do.
@@ -111,13 +113,16 @@ You should have a basic understanding of Grid because if you make something look
 Jen Simmons does a lot of thinking and advocating for all things web-layout. She's a great resource for learning what Grid can do.
 
 Not every grid cell needs content, they can be used for whitespace!
-https://www.youtube.com/watch?v=YfIjFeBLhyA
+
+[![Whitespace with Grid by Jen Simmons](http://img.youtube.com/vi/YfIjFeBLhyA/0.jpg)](https://www.youtube.com/watch?v=YfIjFeBLhyA)
 
 You can create overlaps!
-https://www.youtube.com/watch?v=EashgVqboWo
+
+[![Overlap with Grid by Jen Simmons](http://img.youtube.com/vi/EashgVqboWo/0.jpg)](https://www.youtube.com/watch?v=EashgVqboWo)
 
 Size things with minimums and maximums, but let them flex in-between.
-https://www.youtube.com/watch?v=lZ2JX_6SGNI
+
+[![Overlap with Grid by Jen Simmons](http://img.youtube.com/vi/lZ2JX_6SGNI/0.jpg)](https://www.youtube.com/watch?v=lZ2JX_6SGNI)
 
 Here's a couple of more general talks from Jen about web layout. 
 
@@ -125,14 +130,30 @@ Here's a couple of more general talks from Jen about web layout.
 
 [Revolutionize Your Page: Real Art Direction on the Web by Jen Simmons](https://aneventapart.com/news/post/real-art-direction-on-the-web-by-jen-simmons-an-event-apart)
 
-Here's one last resource with some [real world examples of layouts based on Grid](https://sii.im/playground/css-grid/). 
+Here's one last resource with some real world examples of [layouts based on Grid](https://sii.im/playground/css-grid/). 
 
 #### Things Grid doesn't do
 
 - Things must fall on the grid, regardless of their size or how you want to align them. Items can't arbitrarily cross grid lines unless specified.
 - Grid probably isn't the best solution if you just need to put some things on the same line, or you don't know how wide your items will be.
 
-<Callout copy="There is no IE support for Grid." emoji="alarm" />
+<Callout copy="There is no Internet Explorer support for Grid." emoji="alarm" />
+
+## Object Fit
+
+[Cropping images with Object Fit](https://www.youtube.com/watch?v=5CZyxnCdXuk)
+
+Object-fit is a way to make content items fill their given space in both directions, similar to a background image. 
+
+[](https://labs.jensimmons.com/2019/01-002.html)
+
+This can be done with images and videos. 
+
+For example, I did it with the images on the Sea Cuisine home page:
+
+[Sea Cuisine Seafood Products](https://seacuisine.com/)
+
+ No IE support here either.
 
 ## Pixels vs Percentages
 
