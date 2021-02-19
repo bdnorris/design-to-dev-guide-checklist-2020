@@ -11,19 +11,26 @@
 
 	<h3 id="review-checklist">Review Checklist</h3>
 
+	- Is it flexible
+	- are we leaving out anyone?
+	- touch point sizes
+	- minimum font sizes
+	- hover states
+	- large screens
+
 	<ul>
-	<li>
-		<input type="checkbox" id="breakpoints">
-		<label for="breakpoints">Inspect for problems that might occur between breakpoints</label>
-	</li>
-	<li>
-		<input type="checkbox" id="404">
-		<label for="404">There&#39;s a 404 Page design (not necessary for single page sites and landing pages, a 500 error page is also good for large projects)</label>
-	</li>
-	<li>
-		<input type="checkbox" id="larger">
-		<label for="larger">It&#39;s clear from the design what happens on larger screens</label>
-	</li>
+		<li>
+			<input type="checkbox" id="breakpoints">
+			<label for="breakpoints">Inspect for problems that might occur between breakpoints</label>
+		</li>
+		<li>
+			<input type="checkbox" id="404">
+			<label for="404">There&#39;s a 404 Page design (not necessary for single page sites and landing pages, a 500 error page is also good for large projects)</label>
+		</li>
+		<li>
+			<input type="checkbox" id="larger">
+			<label for="larger">It&#39;s clear from the design what happens on larger screens</label>
+		</li>
 	</ul>
 
 	<h3 id="handoff-checklist">Handoff Checklist</h3>
