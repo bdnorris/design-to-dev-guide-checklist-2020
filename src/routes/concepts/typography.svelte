@@ -11,5 +11,5 @@
   <svelte:component this={Markdown}></svelte:component>
 </article>
 <aside>
-  <Menu set="concepts" />
+  <Menu section="concepts" />
 </aside>

@@ -141,25 +141,22 @@ Here's one last resource with some real world examples of [layouts based on Grid
 
 ## Object Fit
 
-[Cropping images with Object Fit](https://www.youtube.com/watch?v=5CZyxnCdXuk)
+Object-fit is a way to make content items fill their given space in both directions, similar to a background image. It inherently causes cropping of the video or image, so should be used with care. 
 
-Object-fit is a way to make content items fill their given space in both directions, similar to a background image. 
+[Responsive Example of Using Object Fit](https://labs.jensimmons.com/2019/01-002.html)
 
-[](https://labs.jensimmons.com/2019/01-002.html)
+[![Cropping images with Object Fit](http://img.youtube.com/vi/5CZyxnCdXuk/0.jpg)](https://www.youtube.com/watch?v=5CZyxnCdXuk)
 
-This can be done with images and videos. 
 
-For example, I did it with the images on the Sea Cuisine home page:
+This can also be done with videos, making decorative videos much more flexible. 
 
-[Sea Cuisine Seafood Products](https://seacuisine.com/)
-
- No IE support here either.
+<Callout copy="There is no Internet Explorer support for Grid." emoji="alarm" />
 
 ## Pixels vs Percentages
 
 One thing that&#39;s really hard to communicate from design to development, as previously mentioned, is whether a particular thing should be adaptive or responsive, that is, should it be sized in pixels and then change at a breakpoint, or should it be designed at a percentage.
 
-Percentage based designs are typically more flexible and will look better for a wider variety of screens. But, they won&#39;t work for every concept. Developers will usually aim for percentage-based scaling, but if you definitely don&#39;t want that for some reason, make sure to document that.
+Percentage based designs are typically more flexible and will look better for a wider variety of screens. But, they won&#39;t work for every concept. Developers will usually aim for percentage-based scaling, but if you definitely don&#39;t want that for some reason, make sure to document that or let your developer know something should be base its size in pixels.
 
 ## Time for mobile-first design
 

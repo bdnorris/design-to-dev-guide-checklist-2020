@@ -11,9 +11,9 @@
 <article>
   <svelte:component this={Markdown}></svelte:component>
   <footer>
-    <PrevNext />
+    <PrevNext section="concepts" page="responsive-design" />
   </footer>
 </article>
 <aside>
-  <Menu set="concepts" />
+  <Menu section="concepts" />
 </aside>
