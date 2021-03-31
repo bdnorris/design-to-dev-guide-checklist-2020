@@ -8,7 +8,7 @@
 
 <article>
 	<h1>Digital Design Tips</h1>
-	<Menu set="tips" style="index" />
+	<Menu section="tips" style="index" />
 </article>
 <aside></aside>
 

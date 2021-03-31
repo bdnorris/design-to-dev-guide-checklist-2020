@@ -1,10 +1,10 @@
 <script>
   import Menu from '../../components/Menu.svelte';
-  import Markdown from './markdown/dos-and-donts.svx'
+  import Markdown from './markdown/client.svx'
 </script>
 
 <svelte:head>
-	<title>Tips</title>
+	<title>Client Review</title>
 </svelte:head>
 
 <article>

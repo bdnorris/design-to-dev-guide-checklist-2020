@@ -63,6 +63,10 @@ Creating a component allows you to easily use instances of that component across
 
 Components can also have "responsive resize" settings applied, allowing you to resize instances without affecting the master component.
 
+## Component Variation
+
+lorem
+
 ## How to:
 
 - [Using Components in Adobe XD](https://letsxd.com/videos/components)
