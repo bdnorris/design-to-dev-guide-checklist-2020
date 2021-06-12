@@ -16,6 +16,9 @@ We have some blend modes available in CSS, but the results might not match your 
 
 Please include desktop fonts or links to download so we can view the working files properly.
 
+### Don't change font weight on hover other other interactive states
+...
+
 ## Do
 
 ### Be Consistent
