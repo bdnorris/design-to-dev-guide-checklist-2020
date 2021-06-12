@@ -16,6 +16,10 @@ This is a new coding strategy that allows us to only deliver retina images to sc
 
 This does mean we either need both the retina and the non-retina images to be handed off, or, use an image delivery service. 
 
+## Next-gen formats
+
+https://css-tricks.com/time-for-next-gen-codecs-to-dethrone-jpeg/
+
 # Navigation 🧭
 
 Navigation can be a beast. Here's some suggestions for tackling complex navigation.
@@ -41,6 +45,8 @@ Navigation can be a beast. Here's some suggestions for tackling complex navigati
 5. Use Breadcrumbs on your pages!
 
 [Breadcrumb Navigation Increasingly Useful](https://www.nngroup.com/articles/breadcrumb-navigation-useful/)
+
+https://css-tricks.com/in-praise-of-the-unambiguous-click-menu/
 
 ## More N/N
 

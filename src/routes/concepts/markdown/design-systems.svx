@@ -72,7 +72,7 @@ lorem
 - [Using Components in Adobe XD](https://letsxd.com/videos/components)
 - [Adobe XD: Everything about resizable components](https://medium.com/@mo.jahanii/adobe-xd-everything-about-resizable-components-f84105910428)
 
-<div class="divider"></div>
+***
 
 # Web Patterns
 
@@ -87,6 +87,7 @@ You should research these patterns when designing your interfaces.
 - [UI Patterns](http://ui-patterns.com/)
 - [Inclusive Components](https://inclusive-components.design/)
 
+***
 # Styletiles
 
 One way to quickly iterate on the styles for a web project without having to complete full page designs too early.

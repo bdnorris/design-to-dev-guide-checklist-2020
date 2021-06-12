@@ -3,8 +3,8 @@
   export let section
   export let style
 
-  // let items = menus[section]
-  let items = []
+  let items = menus[section]
+  // let items = []
 </script>
 
 <nav class="{style}">
